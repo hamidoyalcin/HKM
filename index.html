@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hello Kitty Mahmut</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header>
+  <div>
+    <h1>Hello Kitty Mahmut</h1>
+    <div class="sub">Solve the puzzle in as few moves as possible.</div>
+  </div>
+  <button onclick="shuffle()">Shuffle</button>
+</header>
+
+<div class="panel">
+ <div class="content">
+  <div class="boardWrap">
+    <div id="board" class="board"></div>
+  </div>
+
+  <div class="side">
+    <div class="card">
+      <div class="row">
+        <div class="stat">
+          <div class="label">Moves</div>
+          <div id="moves" class="value">0</div>
+        </div>
+        <div class="stat">
+          <div class="label">Best</div>
+          <div id="best" class="value">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview">
+        <div class="thumb"><img src="images/puzzle.png"></div>
+        <div class="thumb"><img src="images/puzzle.png"></div>
+      </div>
+      <div class="label">Goal</div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
